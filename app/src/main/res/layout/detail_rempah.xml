@@ -42,4 +42,13 @@
         app:layout_constraintTop_toBottomOf="@id/tv_detail_name"
         />
 
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_detail_description"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
