@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.dicoding.rempahindonesia.R
+import com.dicoding.rempahindonesiaku.R
 
 class ListRempahAdapter (private val listRempah:ArrayList <Rempah>): RecyclerView.Adapter<ListRempahAdapter.ListViewHolder> () {
 
@@ -36,7 +36,9 @@ class ListRempahAdapter (private val listRempah:ArrayList <Rempah>): RecyclerVie
             val intentDetail = Intent(holder.itemView.context, DetailRempah::class.java)
             intentDetail.putExtra("key_rempah", listRempah[holder.adapterPosition])
             holder.itemView.context.startActivity(intentDetail)
-        }}
+        }
+
+    }
     interface OnItemClickCallback {
         fun onItemClicked(data: Rempah)
     }}

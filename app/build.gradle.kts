@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.dicoding.rempahindonesia"
+    namespace = "com.dicoding.rempahindonesiaku"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.dicoding.rempahindonesia"
+        applicationId = "com.dicoding.rempahindonesiaku"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

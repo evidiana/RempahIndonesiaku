@@ -1,5 +1,6 @@
 package com.dicoding.rempahidonesiaku
 
+import android.content.ClipDescription
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
@@ -7,15 +8,13 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.dicoding.rempahindonesia.R
+import com.dicoding.rempahindonesiaku.R
 
 class DetailRempah : AppCompatActivity() {
     lateinit var mShare : Button
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.detail_rempah)
-
         mShare  = findViewById<Button>(R.id.btnShare)
         mShare.setOnClickListener{
             val myIntent = Intent(Intent.ACTION_SEND)
@@ -36,12 +35,9 @@ class DetailRempah : AppCompatActivity() {
         val tvDetailName = findViewById<TextView>(R.id.tv_detail_name)
         val tvDetailDescription = findViewById<TextView>(R.id.tv_detail_description)
         val tvDetailPhoto = findViewById<ImageView>(R.id.img_detail_photo)
-
-        tvDetailName.text = dataRempah?.name
-        tvDetailDescription.text = dataRempah?.description
-        tvDetailPhoto.setImageResource(dataRempah?.photo!!)
-
-
+        tvDetailName.text = dataRempah?.detail_name
+        tvDetailDescription.text = dataRempah?.detail_description
+        tvDetailPhoto.setImageResource(dataRempah?.detail_photo!!)
     } }
 
 

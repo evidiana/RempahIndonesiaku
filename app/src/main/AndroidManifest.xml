@@ -13,6 +13,9 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
+            android:name="com.dicoding.rempahidonesiaku.AboutPage"
+            android:exported="false" />
+        <activity
             android:name="com.dicoding.rempahidonesiaku.MainActivity"
             android:exported="false" />
         <activity
@@ -26,8 +29,7 @@
         </activity>
         <activity
             android:name="com.dicoding.rempahidonesiaku.DetailRempah"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>
